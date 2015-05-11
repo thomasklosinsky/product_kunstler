@@ -61,5 +61,5 @@ class PurchaseTemplate(models.Model):
     product_kunstler_name = fields.Many2one(
         'product.kunstler',
         string='Kunstler',
-        related='product_kunstler.name'
+        related='product_kunstler.id'
     )

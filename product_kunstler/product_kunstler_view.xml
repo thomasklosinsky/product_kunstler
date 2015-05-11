@@ -41,7 +41,6 @@
             <field name="arch" type="xml">
                 <form string="Product Kunstler" version="7.0">
                     <sheet>
-                        <field name="logo" widget="image" class="oe_avatar oe_left"/>
                         <div class="oe_title">
                             <div class="oe_edit_only">
                                 <label for="name" string="Kunstler Name"/>
@@ -62,9 +61,6 @@
                         <group>
                             <field name="partner_id"/>
                         </group>
-                        <group string="Description">
-                            <field name="description" nolabel="1"/>
-                        </group>
                     </sheet>
                 </form>
             </field>
@@ -76,7 +72,6 @@
             <field name="arch" type="xml">
                 <tree string="product.kunstler">
                     <field name="name"/>
-                    <field name="description"/>
                     <field name="partner_id"/>
                 </tree>
             </field>
@@ -87,9 +82,7 @@
             <field name="model">product.kunstler</field>
             <field name="arch" type="xml">
                 <kanban>
-                    <field name="logo"/>
                     <field name="products_count"/>
-                    <field name="description"/>
                     <templates>
                         <t t-name="kanban-box">
                             <div class="oe_kanban_vignette oe_semantic_html_override">
@@ -209,7 +202,7 @@
         <record id="view_purchase_order_order_line_kunstler" model="ir.ui.view">
             <field name="name">order.line</field>
             <field name="model">purchase.order</field>
-            <field name="inherit_id" ref="purchase.purchase_order_form" />
+            <field name="inherit_id" ref="purchase.purchase_order_line" />
             <field name="arch" type="xml">
                 <field name="kunstler" position="after">
                     <field name="product_kunstler_id"/>
