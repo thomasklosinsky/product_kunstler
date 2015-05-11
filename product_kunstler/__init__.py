@@ -2,13 +2,9 @@
 ###############################################################################
 # #                                                                           #
 # product_brand for Odoo #                                                    #
-# Copyright (C) 2009 NetAndCo (<http://www.netandco.net>). #                  #
-# Copyright (C) 2011 Akretion Beno”t Guillot <benoit.guillot@akretion.com> #  #
-# Copyright (C) 2014 prisnet.ch Seraphine Lantible <s.lantible@gmail.com> #   #
+# Copyright (C) 2015 Designcomplex #                                          #
 # Contributors                                                                #
-# Mathieu Lemercier, mathieu@netandco.net, #                                  #
-# Franck Bret, franck@netandco.net #                                          #
-# Seraphine Lantible, s.lantible@gmail.com, http://www.prisnet.ch             #
+# Thomas Klosinsky, thomas@designcomplex.de                                   #
 # #                                                                           #
 # This program is free software: you can redistribute it and/or modify #      #
 # it under the terms of the GNU Affero General Public License as #            #
@@ -25,7 +21,7 @@
 # #                                                                           #
 ###############################################################################
 ###############################################################################
-# Product Brand is an Openobject module wich enable Brand management          #
+# Product Kunstler is an Openobject module wich enable Kunstler management    #
 # for products                                                                #
 ###############################################################################
 from . import product_kunstler
